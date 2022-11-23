@@ -14,13 +14,10 @@
         android:padding="15dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
             android:layout_width="200px"
             android:layout_height="200px"
-            android:src="@drawable/user6"
-            android:layout_centerVertical="true"
-            android:id="@+id/img1"
-            app:civ_border_width="2dp"
-            />
+            android:src="@drawable/user6" />
 
         <TextView
             android:layout_width="match_parent"
@@ -67,7 +64,7 @@
             <Button
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text="Edit"
+                android:text="sửa"
                 android:textAllCaps="false"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="20dp"
@@ -77,7 +74,7 @@
             <Button
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text="Delete"
+                android:text="xoá"
                 android:textAllCaps="false"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="20dp"

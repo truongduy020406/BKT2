@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,115 +8,125 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Add new Tree"
-        android:background="@color/purple_500"
-        android:textSize="25dp"
+        android:layout_alignTop="@+id/txtCourse"
+        android:layout_marginTop="-233dp"
+        android:background="@android:color/holo_green_light"
         android:gravity="center"
+        android:text="Thêm thuốc"
         android:textColor="#fff"
-        />
+        android:textSize="25dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtName"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textSize="20sp"
+        android:layout_marginBottom="60dp"
         android:gravity="center"
-        android:text="Name"
-        />
+        android:text="Tên thuốc"
+        android:textSize="20sp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:gravity="center"
         android:id="@+id/txtName"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/txtCourse"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/rounded"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/txtCourse"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textSize="20sp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
-        android:text="Characteristic"
-        />
+        android:text="đặc điểm"
+        android:textSize="20sp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:gravity="center"
         android:id="@+id/txtCourse"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/txtEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/rounded"
+        android:gravity="center" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/txtEmail"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Color"
-        />
+        android:text="màu"
+        android:textSize="20sp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded"
-        android:gravity="center"
         android:id="@+id/txtEmail"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/btnAdd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/rounded"
+        android:gravity="center" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/txtImageUrl"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:textSize="20sp"
+        android:layout_marginBottom="17dp"
         android:gravity="center"
-        android:text="Image Url"
-        />
+        android:text="link ảnh"
+        android:textSize="20sp" />
 
     <EditText
+        android:id="@+id/txtImageUrl"
         android:layout_width="match_parent"
         android:layout_height="35dp"
+        android:layout_above="@+id/btnAdd"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="42dp"
         android:background="@drawable/rounded"
-        android:gravity="center"
-        android:id="@+id/txtImageUrl"
-        />
+        android:gravity="center" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="10dp"
-        android:text="Save"
-        android:textSize="21dp"
-        android:textAllCaps="false"
-        android:background="@drawable/rounded"
-        android:gravity="center"
         android:id="@+id/btnAdd"
-        />
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
-        android:text="Back"
-        android:textSize="21dp"
-        android:textAllCaps="false"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/rounded"
         android:gravity="center"
+        android:text="lưu"
+        android:textAllCaps="false"
+        android:textSize="21dp" />
+
+    <Button
         android:id="@+id/btnBack"
-        />
-</LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="trở lại"
+        android:textAllCaps="false"
+        android:textSize="21dp" />
+</RelativeLayout>
